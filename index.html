@@ -5,6 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ASOBIBA11(アソビバイレブン)|岐阜・柳ケ瀬のガールズバー|飲み放題60分¥4,000〜</title>
 <meta name="description" content="岐阜・柳ケ瀬のガールズバーASOBIBA11。飲み放題60分¥4,000〜、税・サービス料込みの明朗会計。21時〜クローズまで営業。初めての方も一人飲みも大歓迎!">
+<!-- OGP設定済み。ogp.jpgを同じリポジトリにアップすること -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ASOBIBA11|岐阜・柳ケ瀬のガールズバー|飲み放題60分¥4,000〜">
+<meta property="og:description" content="税・サ込みの明朗会計。カラオケ1卓歌い放題¥1,000。21時〜Close。LINE友だち追加で初回1杯無料!">
+<meta property="og:url" content="https://nagata010203-del.github.io/asobiba11-lp/">
+<meta property="og:image" content="https://nagata010203-del.github.io/asobiba11-lp/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- 構造化データ:Googleに店舗情報を機械可読で伝える(★住所・電話・URL・閉店時間を実データに差し替え) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "girl's bar ASOBIBA11",
+  "description": "岐阜・柳ケ瀬のガールズバー。飲み放題60分4,000円〜、税・サービス料込みの明朗会計。",
+  "address": {"@type": "PostalAddress", "addressLocality": "岐阜市", "addressRegion": "岐阜県", "streetAddress": "○○○○"},
+  "telephone": "+81-00-0000-0000",
+  "url": "https://nagata010203-del.github.io/asobiba11-lp/",
+  "priceRange": "¥4,000〜",
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "21:00", "closes": "01:00"}]
+}
+</script>
 <!-- ★Googleアナリティクス(GA4):analytics.google.comで無料発行した測定IDに「G-XXXXXXXXXX」(2箇所)を差し替えると計測開始。電話タップ・LINEタップも自動計測されます -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
@@ -406,6 +429,20 @@ footer .legal{margin-top:14px;font-size:11.5px;color:#8F8175}
   min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;
   color:#8A7A6D;font-size:13px;line-height:1.9;padding:20px;
 }
+
+/* ===== お客様の声 ===== */
+.voice-card{
+  background:#fff;border-radius:var(--radius);padding:20px;margin-bottom:14px;
+  border:1px solid rgba(240,115,31,.22);box-shadow:0 6px 18px rgba(36,28,23,.05);
+}
+.voice-card .stars{color:#F5A623;font-size:15px;letter-spacing:2px;margin-bottom:6px}
+.voice-card p{font-size:14px;color:#4A3F36}
+.voice-card .who{font-size:12px;color:#8A7A6D;margin-top:8px}
+.g-review-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;max-width:420px;
+  margin:20px auto 0;background:#fff;border:2px solid #4285F4;color:#4285F4;
+  font-weight:700;font-size:15px;text-decoration:none;padding:14px;border-radius:999px;
+}
 </style>
 </head>
 <body>
@@ -666,6 +703,31 @@ footer .legal{margin-top:14px;font-size:11.5px;color:#8F8175}
   </div>
 </section>
 
+<!-- ============ お客様の声 ============ -->
+<section class="reasons" id="voice">
+  <div class="inner">
+    <p class="sec-label">Voice</p>
+    <h2 class="sec-title">お客様の<span class="u">声</span></h2>
+    <!-- ★口コミは実際のGoogle口コミやアンケートから引用に差し替え -->
+    <div class="voice-card">
+      <div class="stars">★★★★★</div>
+      <p>初めてのガールズバーで緊張しましたが、会計が明朗で安心。表示どおりの金額しかかからず、また行きたくなりました。</p>
+      <p class="who">30代・男性(会社員)</p>
+    </div>
+    <div class="voice-card">
+      <div class="stars">★★★★★</div>
+      <p>2人でカラオケ入れて盛り上がって1人6,500円。コスパが良すぎて週末の定番になってます。</p>
+      <p class="who">20代・男性(2名で利用)</p>
+    </div>
+    <div class="voice-card">
+      <div class="stars">★★★★☆</div>
+      <p>キャストの子が話しやすくて、一人でふらっと寄るのにちょうどいい。テキーラ観覧車は一見の価値ありです(笑)</p>
+      <p class="who">40代・男性(常連)</p>
+    </div>
+    <a class="g-review-btn" href="#">Googleで口コミを見る・書く</a><!-- ★GoogleマップのレビューURL差し替え -->
+  </div>
+</section>
+
 <!-- ============ Q&A ============ -->
 <section>
   <div class="inner">
@@ -705,6 +767,7 @@ footer .legal{margin-top:14px;font-size:11.5px;color:#8F8175}
       <a class="btn btn-line" href="#"><!-- ★求人用LINE URL差し替え -->
         LINEで応募・質問する<small>「体験だけ」「質問だけ」も大歓迎</small>
       </a>
+      <a class="btn" href="recruit.html" style="background:transparent;border:2px solid var(--orange);color:var(--orange)">求人の詳細を見る →</a>
     </div>
     <p class="recruit-note">応募資格:18歳以上(高校生不可)。年齢確認のため身分証をご持参ください。</p>
   </div>
@@ -779,7 +842,7 @@ footer .legal{margin-top:14px;font-size:11.5px;color:#8F8175}
   if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   // 出現対象を自動登録(3つごとに時間差)
   var targets = document.querySelectorAll(
-    '.sec-title,.sec-label,.reason,.menu-card,.event-card,.cast-card,.qa-item,.perk,.today-strip,.sched-table,.map-box,.shop-table,.recruit-lead,.closing h2,.closing p,.closing .cta-set,.cast-note,.sim-card,.coupon,.sns-btns,.sns-embed'
+    '.sec-title,.sec-label,.reason,.menu-card,.event-card,.cast-card,.qa-item,.perk,.today-strip,.sched-table,.map-box,.shop-table,.recruit-lead,.closing h2,.closing p,.closing .cta-set,.cast-note,.sim-card,.coupon,.sns-btns,.sns-embed,.voice-card,.g-review-btn'
   );
   targets.forEach(function(el,i){
     el.classList.add('reveal');
